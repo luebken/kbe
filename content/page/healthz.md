@@ -20,7 +20,7 @@ Let's create a [pod](https://github.com/mhausenblas/kbe/blob/master/specs/health
 that exposes an endpoint `health/`, responding with a HTTP `200` status code:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/healthz/pod.yaml
+$ kubectl create -f specs/healthz/pod.yaml
 ```
 
 In the pod specification we've defined the following:
@@ -64,7 +64,7 @@ that is, a pod that has a container that randomly (in the time range 1 to 4 sec)
 does not return a 200 code:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/healthz/badpod.yaml
+$ kubectl create -f specs/healthz/badpod.yaml
 ```
 
 Looking at the events of the bad pod, we can see that the health check failed:
@@ -108,7 +108,7 @@ Let's create a [pod](https://github.com/mhausenblas/kbe/blob/master/specs/health
 with a `readinessProbe` that kicks in after 10 seconds:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/healthz/ready.yaml
+$ kubectl create -f specs/healthz/ready.yaml
 ```
 
 Looking at the events of the pod, we can see that, eventually, the pod is ready

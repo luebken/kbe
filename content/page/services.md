@@ -19,9 +19,9 @@ and a [service](https://github.com/mhausenblas/kbe/blob/master/specs/services/sv
 along with it:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/services/rc.yaml
+$ kubectl create -f specs/services/rc.yaml
 
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/services/svc.yaml
+$ kubectl create -f specs/services/svc.yaml
 ```
 
 Now we have the supervised pod running:

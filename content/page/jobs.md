@@ -13,7 +13,7 @@ Let's create a [job](https://github.com/mhausenblas/kbe/blob/master/specs/jobs/j
 called `countdown` that supervises a pod counting from 9 down to 1:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/jobs/job.yaml
+$ kubectl create -f specs/jobs/job.yaml
 ```
 
 You can see the job and the pod it looks after like so:

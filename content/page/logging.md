@@ -15,7 +15,7 @@ Let's create a [pod](https://github.com/mhausenblas/kbe/blob/master/specs/loggin
 called `logme` now that runs a container writing to `stdout` and `stderr`:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/logging/pod.yaml
+$ kubectl create -f specs/logging/pod.yaml
 ```
 
 To view the five most recent log lines of the `gen` container in the `logme` pod,
@@ -51,7 +51,7 @@ called `oneshot` that counts down from 9 to 1 and then exits. Using the `-p` opt
 you can print the logs for previous instances of the container in a pod:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/logging/oneshotpod.yaml
+$ kubectl create -f specs/logging/oneshotpod.yaml
 $ kubectl logs -p oneshot -c gen
 9
 8

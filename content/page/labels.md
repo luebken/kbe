@@ -16,7 +16,7 @@ Let's create a [pod](https://github.com/mhausenblas/kbe/blob/master/specs/labels
 that initially has one label (`env=development`):
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/labels/pod.yaml
+$ kubectl create -f specs/labels/pod.yaml
 
 $ kubectl get pods --show-labels
 NAME       READY     STATUS    RESTARTS   AGE    LABELS
@@ -58,7 +58,7 @@ Let's launch [another pod](https://github.com/mhausenblas/kbe/blob/master/specs/
 that has two labels (`env=production` and `owner=michael`):
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/labels/anotherpod.yaml
+$ kubectl create -f specs/labels/anotherpod.yaml
 ```
 
 Now, let's list all pods that are either labelled with `env=development` or with

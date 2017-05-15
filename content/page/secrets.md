@@ -41,7 +41,7 @@ via a [volume](/volumes/):
 
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/secrets/pod.yaml
+$ kubectl create -f specs/secrets/pod.yaml
 ```
 
 If we now exec into the container we see the secret mounted at `/tmp/apikey`:

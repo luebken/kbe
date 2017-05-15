@@ -12,7 +12,7 @@ Let's create a [deployment](https://github.com/mhausenblas/kbe/blob/master/specs
 called `sise-deploy` that supervises two replicas of a pod as well as a replica set:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/deployments/d09.yaml
+$ kubectl create -f specs/deployments/d09.yaml
 ```
 
 You can see the deployment, the replica set and the pods it looks after like so:
@@ -47,7 +47,7 @@ Let's now see what happens if we change that version to `1.0` in an updated
 [deployment](https://github.com/mhausenblas/kbe/blob/master/specs/deployments/d10.yaml):
 
 ```bash
-$ kubectl apply -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/deployments/d10.yaml
+$ kubectl apply -f specs/deployments/d10.yaml
 deployment "sise-deploy" configured
 ```
 

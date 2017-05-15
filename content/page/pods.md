@@ -45,7 +45,7 @@ running the already known `simpleservice` image from above along with
 a generic `CentOS` container:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/pods/pod.yaml
+$ kubectl create -f specs/pods/pod.yaml
 
 $ kubectl get pods
 NAME                      READY     STATUS    RESTARTS   AGE
@@ -66,7 +66,7 @@ container in a [pod](https://github.com/mhausenblas/kbe/blob/master/specs/pods/c
 can use (here: `64MB` of RAM and `0.5` CPUs):
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/pods/constraint-pod.yaml
+$ kubectl create -f specs/pods/constraint-pod.yaml
 
 $ kubectl describe pod constraintpod
 ...

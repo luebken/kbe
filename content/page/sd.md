@@ -14,9 +14,9 @@ Let's create a [service](https://github.com/mhausenblas/kbe/blob/master/specs/sd
 some pods along with it:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/sd/rc.yaml
+$ kubectl create -f specs/sd/rc.yaml
 
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/sd/svc.yaml
+$ kubectl create -f specs/sd/svc.yaml
 ```
 
 Now we want to connect to the `thesvc` service from within the cluster, say, from another service.
@@ -24,7 +24,7 @@ To simulate this, we create a [jump pod](https://github.com/mhausenblas/kbe/blob
 in the same namespace (`default`, since we didn't specify anything else):
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/sd/jumpod.yaml
+$ kubectl create -f specs/sd/jumpod.yaml
 ```
 
 The DNS add-on will make sure that our service `thesvc` is available via the FQDN
@@ -77,11 +77,11 @@ Let's see how that works by creating:
 If you're not familiar with namespaces, check out the [namespace examples](/ns/) first.
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/sd/other-ns.yaml
+$ kubectl create -f specs/sd/other-ns.yaml
 
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/sd/other-rc.yaml
+$ kubectl create -f specs/sd/other-rc.yaml
 
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/sd/other-svc.yaml
+$ kubectl create -f specs/sd/other-svc.yaml
 ```
 
 We're now in the position to consume the service `thesvc` in namespace `other` from the

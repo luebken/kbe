@@ -22,7 +22,7 @@ Let's create a [pod](https://github.com/mhausenblas/kbe/blob/master/specs/volume
 with two containers that use an `emptyDir` volume to exchange data:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/volumes/pod.yaml
+$ kubectl create -f specs/volumes/pod.yaml
 
 $ kubectl describe pod sharevol
 Name:                   sharevol

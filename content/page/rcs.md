@@ -14,7 +14,7 @@ Let's create an [RC](https://github.com/mhausenblas/kbe/blob/master/specs/rcs/rc
 that supervises a single replica of a pod:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/rcs/rc.yaml
+$ kubectl create -f specs/rcs/rc.yaml
 ```
 
 You can see the RC and the pod it looks after like so:

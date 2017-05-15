@@ -41,7 +41,7 @@ Let's now create a new [namespace](https://github.com/mhausenblas/kbe/blob/maste
 called `test` now:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/ns/ns.yaml
+$ kubectl create -f specs/ns/ns.yaml
 namespace "test" created
 
 $ kubectl get ns
@@ -58,7 +58,7 @@ To launch a [pod](https://github.com/mhausenblas/kbe/blob/master/specs/ns/pod.ya
 the newly created namespace `test`, do:
 
 ```bash
-$ kubectl create --namespace=test -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/ns/pod.yaml
+$ kubectl create --namespace=test -f specs/ns/pod.yaml
 ```
 
 Note that using above method the namespace becomes a runtime property, that is,
